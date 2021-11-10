@@ -60,7 +60,7 @@ function Index(props) {
         />
         <input
           type="text"
-          value={newForm.title}
+          value={newForm.countryOfOrigin}
           name="countryOfOrigin"
           placeholder="country of origin"
           onChange={handleChange}
