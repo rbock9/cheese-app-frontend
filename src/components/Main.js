@@ -6,7 +6,7 @@ import Show from "../pages/Show";
 function Main(props) {
   const [cheese, setCheese] = useState(null);
 
-  const URL = "http://localhost:4000/cheese/";
+  const URL = "https://rbock9-cheese-app-backend.herokuapp.com/cheese/";
 
   const getCheese = async () => {
     const response = await fetch(URL);
@@ -27,7 +27,7 @@ function Main(props) {
     getCheese();
   };
 
-  const updateCheese = async (person, id) => {
+  const updateCheese = async (singleCheese, id) => {
     // make post request to create cheese
     await fetch(URL + id, {
       method: "put",
